@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA POKÉMON TCG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- Menú de navegación -->
+        <nav class="menu">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-dice me-2"></i> <!-- Agrega margen a la derecha del ícono -->
+                <span>POKÉMON TCG</span>
+            </div>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="material-icons">menu</span>
+            </button>
+            <div class="navbar-collapse d-none d-md-block" id="navbarMenu">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Catálogo</li>
+                    <li>Ofertas</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Filtros -->
+        <div class="filtros text-center">
+            <label for="ordenar">Ordenar por:</label>
+            <select id="ordenar" class="form-select w-100">
+                <option>Precio</option>
+                <option>Popularidad</option>
+                <option>Modelo</option>
+            </select>
+        </div>
+
+        <!-- Sección Principal (catálogo) -->
+        <main class="catalogo">
+            <div class="producto">
+                <img src="assets/img/CAJA Shrouded Fable – Kingdra ex Greninja ex Special Illustration Collection ESPAÑOL.jpg"
+                    alt="Shrouded Fable – Elite Trainer Box ESPAÑOL">
+                <h5>Shrouded Fable – Elite Trainer Box ESPAÑOL</h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/CAJA Shrouded Fable – Kingdra ex Greninja ex Special Illustration Collection INGLÉS.jpg"
+                    alt="Shrouded Fable – Elite Trainer Box INGLÉS">
+                <h5>Shrouded Fable – Elite Trainer Box INGLÉS</h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/CAJA Shrouded Fable – Kingdra ex Greninja ex Special Illustration Collection ESPAÑOL.jpg"
+                    alt="CAJA Shrouded Fable – Kingdra ex/Greninja ex Special Illustration Collection ESPAÑOL
+                ">
+                <h5>CAJA Shrouded Fable – Kingdra ex/Greninja ex Special Illustration Collection ESPAÑOL
+                </h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/CAJA Shrouded Fable – Kingdra ex Greninja ex Special Illustration Collection INGLÉS.jpg"
+                    alt="CAJA Shrouded Fable – Kingdra ex/Greninja ex Special Illustration Collection INGLÉS">
+                <h5>CAJA Shrouded Fable – Kingdra ex/Greninja ex Special Illustration Collection INGLÉS</h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/Caja Shrouded Fable – Kingambit Illustration Collection ESPAÑOL.jpg"
+                    alt="Caja Shrouded Fable – Kingambit Illustration Collection ESPAÑOL">
+                <h5>Caja Shrouded Fable – Kingambit Illustration Collection ESPAÑOL</h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/Caja Shrouded Fable – Kingambit Illustration Collection INGLÉS.jpg"
+                    alt="Caja Shrouded Fable – Kingambit Illustration Collection INGLÉS">
+                <h5>Caja Shrouded Fable – Kingambit Illustration Collection INGLÉS</h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/Pack 3 sobres Shrouded Fable – 3pk Blister ESPAÑOL.jpg"
+                    alt="Pack 3 sobres Shrouded Fable – 3pk Blister ESPAÑOL">
+                <h5>Pack 3 sobres Shrouded Fable – 3pk Blister ESPAÑOL</h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/Pack 3 sobres Shrouded Fable – 3pk Blister INGLÉS.jpg"
+                    alt="Pack 3 sobres Shrouded Fable – 3pk Blister INGLÉS">
+                <h5>Pack 3 sobres Shrouded Fable – 3pk Blister INGLÉS</h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/Shrouded Fable – Elite Trainer Box ESPAÑOL.jpg"
+                    alt="Mini lata Shrouded Fable – Mini Tin ESPAÑOL">
+                <h5>Mini lata Shrouded Fable – Mini Tin ESPAÑOL</h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/Lonchera – Collector Chest (BTS 2024) INGLÉS.jpg"
+                    alt="Lonchera – Collector Chest (BTS 2024) INGLÉS">
+                <h5>Lonchera – Collector Chest (BTS 2024) INGLÉS</h5>
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+            <!-- Repite este bloque para todos los productos -->
+            <!-- ... -->
+        </main>
+
+        <!-- Sección de paginado -->
+        <div class="pagination-container">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">«</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">»</a></li>
+            </ul>
+        </div>
+
+        <!-- Pie de página -->
+        <footer class="pie-pagina">
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p>Todos los derechos reservados &copy; 2024</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
